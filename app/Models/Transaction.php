@@ -1,11 +1,13 @@
 <?php
 
+
 namespace App\Models;
+
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Account extends Model
+class Transaction extends Model
 {
     use HasFactory;
 
@@ -15,12 +17,12 @@ class Account extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id',
-        'iban',
-        'bic',
-        'balance'
+        'id',
+        'iban_send',
+        'iban_receive',
+        'amount',
+        'payment_reference',
+        'usage'
     ];
-
-
 
 }

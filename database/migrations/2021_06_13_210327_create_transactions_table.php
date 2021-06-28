@@ -18,6 +18,8 @@ class CreateTransactionsTable extends Migration
             $table->string('iban_send');
             $table->string('iban_receive');
             $table->double('amount');
+            $table->string('payment_reference');
+            $table->string('usage');
             $table->timestamps();
         });
     }
